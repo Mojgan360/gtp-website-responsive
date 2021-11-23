@@ -1,0 +1,133 @@
+/*
+=============== 
+Navbar
+===============
+*/
+.gtp3__navbar {
+  background-color: #ccc;
+}
+.gtp3__navbar-center {
+  position: relative;
+}
+.gtp3__navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.gtp3__navbar-header img {
+  width: 62.56px;
+  height: 16.02px;
+}
+.gtp3__navbar-header_toggle_menu {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.gtp3__navbar-containers {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.links a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.gtp3__navbar-signin {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5rem;
+  flex: 3;
+  height: 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 550px) {
+  .gtp3__navbar-center {
+    display: flex;
+
+    justify-content: space-around;
+    background-color: visible;
+    overflow: auto;
+  }
+  .gtp3__navbar-signin {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    height: auto !important;
+    align-items: center;
+  }
+  .gtp3__navbar-signin button {
+    margin: 0 1rem;
+    padding: 0.2rem 1rem;
+    color: #fff;
+    background: #ff4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .gtp3__navbar-signin p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .gtp3__navbar-header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  .gtp3__navbar-header_toggle_menu {
+    position: absolute;
+    right: 1rem;
+    float: left;
+  }
+}
+@media screen and (min-width: 810px) {
+  .gtp3__navbar {
+    background-color: darkgrey;
+  }
+  .gtp3__navbar-header_toggle_menu {
+    display: none;
+  }
+  .gtp3__navbar-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .gtp3__navbar-containers {
+    height: auto !important;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .gtp3__navbar-header_toggle_menu {
+    padding: 0;
+  }
+  .gtp3__navbar-signin {
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+  }
+}
