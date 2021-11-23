@@ -4,7 +4,8 @@ Navbar
 ===============
 */
 .gtp3__navbar {
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  height: 2rem;
 }
 .gtp3__navbar-center {
   position: relative;
@@ -25,6 +26,7 @@ Navbar
   border-color: transparent;
   cursor: pointer;
   transition: var(--transition);
+  color: #f2f2f2;
 }
 .gtp3__navbar-containers {
   height: 0;
@@ -42,6 +44,8 @@ Navbar
   display: flex;
   justify-content: flex-end;
   margin-left: 5rem;
+  color: #f2f2f2;
+
   flex: 3;
   height: 0;
   overflow: hidden;
@@ -64,8 +68,8 @@ Navbar
   .gtp3__navbar-signin button {
     margin: 0 1rem;
     padding: 0.2rem 1rem;
-    color: #fff;
     background: #ff4820;
+    color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 15px;
@@ -84,18 +88,17 @@ Navbar
   .gtp3__navbar-header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 0;
   }
   .gtp3__navbar-header_toggle_menu {
     position: absolute;
     right: 1rem;
     float: left;
+    color: #fff;
   }
 }
-@media screen and (min-width: 810px) {
-  .gtp3__navbar {
-    background-color: darkgrey;
-  }
+@media screen and (min-width: 824px) {
   .gtp3__navbar-header_toggle_menu {
     display: none;
   }
@@ -106,9 +109,6 @@ Navbar
     align-items: center;
     justify-content: flex-start;
     white-space: nowrap;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 13px;
   }
   .gtp3__navbar-containers {
     height: auto !important;
@@ -121,6 +121,10 @@ Navbar
   .links a {
     padding: 0;
     margin: 0 0.5rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
   }
   .gtp3__navbar-header_toggle_menu {
     padding: 0;

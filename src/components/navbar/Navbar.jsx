@@ -27,13 +27,15 @@ const Navbar = () => {
           <ul className='links'>
             {links.map((item) => {
               return (
-                <li>
+                <li key={item.id}>
                   <a href={item.url}>{item.text}</a>
                 </li>
               )
             })}
           </ul>
         </div>
+        {/* nav-sigin */}
+
         <div className='gtp3__navbar-signin'>
           <p>Sign in</p>
           <button>Sign Up</button>
