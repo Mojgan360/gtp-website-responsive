@@ -6,7 +6,7 @@ const WhatGTP3 = () => {
   return (
     <div className='gpt3__whatgpt3 section__margin' id='wgpt3'>
       <div className='gpt3__whatgpt3-feature'>
-        <Feature />
+        <Feature title='this is title' text='this is Test....' />
       </div>
 
       <div className='gpt3__whatgpt3-heading'>
@@ -17,9 +17,9 @@ const WhatGTP3 = () => {
       </div>
 
       <div className='gpt3__whatgpt3-container'>
-        <Feature />
-        <Feature />
-        <Feature />
+        <Feature title='this is title' text='this is Test....' />
+        <Feature title='this is title' text='this is Test....' />
+        <Feature title='this is title' text='this is Test....' />
       </div>
     </div>
   )
