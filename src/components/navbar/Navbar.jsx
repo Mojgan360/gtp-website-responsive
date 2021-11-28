@@ -51,8 +51,8 @@ const Navbar = () => {
                 <ul className='gpt3__navbar-menu_container-links'>
                   {links.map((item, index) => {
                     return (
-                      <li key={index}>
-                        <a href={item.url}>{item.text}</a>
+                      <li key={index} onClick={() => setToggleMenu(false)}>
+                        <a href={item.url}>{item.text} </a>
                       </li>
                     )
                   })}
