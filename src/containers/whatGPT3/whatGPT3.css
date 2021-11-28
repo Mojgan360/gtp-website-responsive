@@ -50,6 +50,7 @@
 
 .gpt3__whatgpt3-feature {
   display: flex;
+  z-index: -100;
 }
 
 /* Customizing feature component as per needs */
